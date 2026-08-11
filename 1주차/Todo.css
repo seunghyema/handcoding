@@ -68,6 +68,7 @@ body{
 .todo-priority{
     border : none;
     background : transparent;
+    padding-left : 10px;
 }
 
 
@@ -155,4 +156,27 @@ body{
     bottom : 0;
     right : 20%;
 
+}
+
+.completed{
+    text-decoration: line-through;
+    color : #a2b2c8
+}
+
+.delete-btn{
+    opacity: 0;
+    transition : 0.2s;
+    cursor: pointer;
+    background : none;
+    border : none;
+    color : #eb5a3c;
+    font-weight: bold;
+    font-size : 10px;
+    display : flex;
+    align-items: center;
+    
+}
+
+.todo-item:hover .delete-btn{
+    opacity : 1;
 }
