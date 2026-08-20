@@ -1,23 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel = "stylesheet" href = "typing.css">
-</head>
-<body>
+    <link rel="stylesheet" href="typing.css" />
+  </head>
+  <body>
     <div class="game-container">
-    <header>
-        <span class="header_title">TYPING ADVENTURE</span>
-        <img src="image.png" alt="설정" class="setting_icon">
-    </header>
+      <div class="top-area">
+        <header>
+          <span class="header_title">TYPING ADVENTURE</span>
+        </header>
 
-    <main>
-        <button class="start">START</button>
-        <p class="explain">game begins<br>when you press start</p>
+        <div class="status-bar hidden">
+          <p class="score">점수는 0</p>
+          <p class="timer">5</p>
+        </div>
+      </div>
 
-    </main>
+      <main>
+        <div class="start-screen">
+          <button class="start">START</button>
+          <p class="explain">game begins<br />when you press start</p>
+        </div>
+
+        <div class="game-screen hidden">
+          <form class="typing-form">
+            <div class="input-box">
+              <span class="target-word">apple</span>
+              <input type="text" class="word-input" autocomplete="off" />
+            </div>
+          </form>
+        </div>
+      </main>
     </div>
-</body>
+    <script src="typing.js"></script>
+  </body>
 </html>
