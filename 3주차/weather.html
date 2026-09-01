@@ -10,7 +10,7 @@
     <div class="weather-dashboard">
       <header class="top-bar">
         <form class="search-form">
-          <label for="search-input">장소 검색</label>
+          <label for="search-input" class="visually-hidden">장소 검색</label>
           <input
             type="search"
             id="search-input"
@@ -27,12 +27,12 @@
       </header>
       <p class="loading"></p>
       <main class="main-icon">
-        <img src = "해와 구름.avif" alt="해와 구름 이미지">
+        <img src = "cloud.svg" alt="구름 이미지" class="weather-svg">
       </main>
       <footer class="bottom-bar">
         <section class="current">
+          <p class="current-label">Weather</p>
             <div class="current-main">
-            <p class="current-label">Weather</p>
             <p class="current-temp">33°</p>
             <p class="current-date">Monday 16th</p>
             </div>
